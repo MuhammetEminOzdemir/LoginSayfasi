@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="main">  <!--Tüm sayfayı kapalayacak-->
+            <div class="form-box"> <!--Login alanını kapsayacak bir div-->
+                   <div class="button-box-kapsayici">
+                        <div id="btn"></div> <!--Arka rengini bu dive veriyoruz-->
+                        <button type="button" class="toggle-btn" onclick="login()">Giriş Yap</button>
+                        <button type="button" class="toggle-btn" onclick="register()">Kayıt Ol</button>
+                   </div>
+
+                   <div class="social-icons">
+                        <a href="https://www.instagram.com/"><lottie-player src="https://assets6.lottiefiles.com/packages/lf20_k8myxshf.json"  
+                        speed="1" loop autoplay></lottie-player></a>
+
+                        <a href="https://twitter.com/?lang=tr"><lottie-player src="https://assets4.lottiefiles.com/packages/lf20_thh7qfpt.json"   
+                        speed="1"  loop  autoplay></lottie-player></a>
+
+                        <a href="https://www.linkedin.com/in/muhammedemin0zdemir/"><lottie-player src="https://assets10.lottiefiles.com/packages/lf20_iotglorw.json"   
+                        speed="1" loop  autoplay></lottie-player></a>
+
+                        <a href="https://tr-tr.facebook.com/"><lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_qhsl1iwc.json"  
+                        speed="1" loop  autoplay></lottie-player></a>
+
+                        <a href="https://youtube.com/"><lottie-player src="https://assets7.lottiefiles.com/packages/lf20_emod42y4.json"  
+                        speed="1" loop  autoplay></lottie-player></a>
+                   </div>
+
+                   <form id="login" class="input-group">
+                        <input type="text" class="input-field" placeholder="  Kullanıcı Adı" required>
+                        <input type="password" class="input-field" placeholder="  Şifre" required>
+                        <input type="checkbox" class="check-box"><span>Beni Hatırla</span>
+                        <a href="#">Şifremi Unuttum</a>
+                        <button type="submit" class="submit-btn">Giriş Yap</button>
+                   </form>
+
+                   <form id="register" class="input-group">
+                        <input type="text" class="input-field" placeholder="  Kullanıcı Adı" required>
+                        <input type="password" class="input-field" placeholder="  Şifre" required>
+                        <input type="mail" class="input-field" placeholder="  E-mail" required>
+                        <input type="checkbox" class="check-box"><span><a class="kullanımKosul" href="#">Kullanım Koşullarını Kabul Ediyorum</a></span>
+                        <button type="submit" class="submit-btn">Giriş Yap</button>
+                   </form>
+
+            </div>
+      </div>  
+
+      <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+
+
+            function register(){
+                  x.style.left = "-400px";
+                  y.style.left = "50px";
+                  z.style.left = "110px";
+            }
+
+            function login(){
+                  x.style.left = "50px";
+                  y.style.left = "450px";
+                  z.style.left = "0px";
+            }
+      </script>
+      
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+
+</body>
+</html>
